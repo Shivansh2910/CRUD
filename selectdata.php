@@ -14,7 +14,7 @@ if (!$conn){
 }
 echo "<br>";
 // Sql query
-$sql = "SELECT * FROM `information`";
+$sql = "SELECT * FROM `information`WHERE `City`= 'Delhi'";
 $result = mysqli_query($conn, $sql);
 // Find the number of records returned
 $num = mysqli_num_rows($result);
